@@ -12,7 +12,7 @@ router.post("/",verifytokenandadmin,async(req,res)=>{
         res.status(200).json(savedproduct);
     }catch(err){
         res.status(400).json(err);
-        console.log(err);
+       
     }
 })
 
@@ -55,7 +55,7 @@ router.get("/find/:id",async(req,res)=>{
     }
     catch(err){
         res.status(400).json(err);
-        console.log(err)
+        
     }
 })
 
@@ -84,6 +84,6 @@ router.get("/",async(req,res)=>{
     }      
     catch(err){ 
         res.status(400).json(err)
-        console.log(err);
+       
     }
 })

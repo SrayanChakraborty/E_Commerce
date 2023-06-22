@@ -174,7 +174,7 @@ function Cart() {
     function onToken(token) {
         setstripetoken(token)
     }
-    console.log(stripetoken)
+    
 
     function handleremoveclick(){
         dispatch(

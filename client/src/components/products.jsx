@@ -29,7 +29,7 @@ function Products({ cat, sort, filter }) {
                 const response = await axios.get(`http://localhost:5000/api/product?category=${cat}`);
                 setproducts(response.data);
             } catch (err) {
-                console.log(err)
+               
             }
         }
         getproduct();

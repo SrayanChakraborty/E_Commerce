@@ -14,9 +14,8 @@ const cors=require('cors');
 dotenv.config();
  
 
-mongoose.connect(process.env.MONGO_URL) 
-.then(()=>console.log("Db connection successful!!"))
-.catch((err)=>{console.log(err)} );
+mongoose.connect(process.env.MONGO_URL);
+
 
 app.use(express.json());
 app.use(cors()); 
@@ -28,5 +27,5 @@ app.use('/api/order',orderRoute);
 
 
 app.listen(process.env.PORT || 5000 ,()=>{
-    console.log(`app running on port`);
+    
 })

@@ -37,7 +37,7 @@ router.get("/find/:id",verifytokenandauth,async(req,res)=>{
         res.status(200).json({...others});
     }catch(err){
         res.status(400).json(err)
-        console.log(err)
+        
     }
 })
 
